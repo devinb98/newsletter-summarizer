@@ -1,0 +1,22 @@
+# --- secrets: never commit ---
+.env
+credentials.json
+client_secret*.json
+token.json
+token*.json*          # also catches token.json.expired-*
+*.expired-*
+
+# --- python ---
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# --- logs & runtime (cron.log contains newsletter subject lines) ---
+*.log
+
+# --- os ---
+.DS_Store
+
+# --- privacy policy page lives in its own repo ---
+privacy-policy/
